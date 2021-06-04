@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        </head>
+        <title> Family Book</title>
+        <body>
+            <h1> Family Book</h1>
+            <hr> <hr> 
+            <img id="family_img" src="https://i.pinimg.com/474x/ac/16/7f/ac167f99aeae365645edcdd2143995a7.jpg">
+            <h3 id="one">1. Our Family Book</h3>
+            <button type="button" onclick="family()">Next</button>
+            <hr>
+            <script>
+            var names = [
+                "2. My Father (Umesh Katoch)",
+                "3. My Mother (Babita Katoch)",
+                "4. My Sister (Shanya Katoch)",
+                "5. Me (Shiven Katoch)",
+            ];
+
+            var images = [
+                "https://www.seekpng.com/png/detail/373-3737886_man-clipart-dad-animated-picture-of-father.png",
+                "https://i.pinimg.com/originals/c1/a9/b2/c1a9b2512b29182b99fa3052c5f37e85.jpg",
+                "https://st.depositphotos.com/1526816/3206/v/600/depositphotos_32060185-stock-illustration-a-cute-little-girl-with.jpg",
+                "https://image.freepik.com/free-vector/cute-happy-smiling-child-isolated-white_1308-32243.jpg",
+            ]
+
+            var i = 0;
+            function family(){
+                document.getElementById("one").innerHTML = names[i];
+                document.getElementById("family_img").src = images[i];
+                i++;
+                if(i==4){
+                    i=0
+                }}
+            
+                </script>
+                </body>
+                </html>
